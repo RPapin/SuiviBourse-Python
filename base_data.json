@@ -1,0 +1,56 @@
+{
+    "2CRSI" : {
+        "DATE_INVEST" : "09/09/2020",
+        "URL": "https://www.boursorama.com/cours/1rP2CRSI/",
+        "CODE" : "2CRSI",
+        "LABEL": "2CRSI PROMESSES",
+        "QUANTITE": 100,
+        "PRIX_ACHAT": 3.143,
+        "Code ISIN": "FR0013341781"
+    },
+    "AUBAY" : {
+        "DATE_INVEST" : "09/09/2020",
+        "URL": "https://www.boursorama.com/cours/1rPAUB/",
+        "CODE" : "AUBAY",
+        "LABEL": "AUBAY",
+        "QUANTITE": 15,
+        "PRIX_ACHAT": 31.877,
+        "Code ISIN": "FR0000063737"
+        },
+    "CAPGEMINI" : {
+        "DATE_INVEST" : "09/09/2020",
+        "URL": "https://www.boursorama.com/cours/1rPCAP/",
+        "CODE" : "CAPGEMINI",
+        "LABEL": "CAPGEMINI",
+        "QUANTITE": 10,
+        "PRIX_ACHAT": 110.467,
+        "Code ISIN": "FR0000125338"
+        },
+    "FDJ" : {
+        "DATE_INVEST" : "09/09/2020",
+        "URL": "https://www.boursorama.com/cours/1rPFDJ/",
+        "CODE" : "FDJ",
+        "LABEL": "FDJ",
+        "QUANTITE": 6,
+        "PRIX_ACHAT": 30.913,
+        "Code ISIN": "FR0013451333"
+        },
+    "SOMFY" : {
+        "DATE_INVEST" : "09/09/2020",
+        "URL": "https://www.boursorama.com/cours/1rPSO/",
+        "CODE" : "SOMFY",
+        "LABEL": "SOMFY",
+        "QUANTITE": 5,
+        "PRIX_ACHAT": 120.234 ,
+        "Code ISIN": "FR0013199916"
+        },
+    "WITBE" : {
+        "DATE_INVEST" : "09/09/2020",
+        "URL": "https://www.boursorama.com/cours/1rPALWIT/",
+        "CODE" : "WITBE",
+        "LABEL": "WITBE",
+        "QUANTITE": 70,
+        "PRIX_ACHAT": 7.57,
+        "Code ISIN": "FR0013143872"
+    }
+}
