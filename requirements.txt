@@ -1,5 +1,5 @@
 Flask==1.1.2
-numpy==1.20.1
+numpy
 selenium==3.141.0
 google_api_python_client==2.0.2
 google_auth_oauthlib==0.4.3
