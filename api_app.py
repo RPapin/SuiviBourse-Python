@@ -7,8 +7,8 @@ import getOldData as god
 app = Flask(__name__)
 # app.config["DEBUG"] = True
 
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-
+onlyfiles = [f for f in listdir(os.getcwd()) if isfile(join(os.getcwd(), f))]
+print(onlyfiles)
 @app.route('/', methods=['GET'])
 def home():
     print(onlyfiles)
@@ -17,8 +17,6 @@ def home():
 @app.route('/api/v1/data', methods=['GET'])
 def api_all():
     pathData = os.path.join(os.getcwd(), 'Python/data.json')
-    pathData
-    print(pathData)
     with open(pathData) as json_file:
         return json.load(json_file)
 @app.route('/api/v1/fecthLastData', methods=['GET'])
