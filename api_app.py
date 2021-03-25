@@ -1,19 +1,23 @@
 from flask import Flask, request
 import json
-from os import path
+from os import path, listdir
 import os.path
+from os.path import isfile, join
 import getOldData as god
 app = Flask(__name__)
 # app.config["DEBUG"] = True
 
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 
 @app.route('/', methods=['GET'])
 def home():
+    print(onlyfiles)
     return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
 # A route to return all data.
 @app.route('/api/v1/data', methods=['GET'])
 def api_all():
     pathData = os.path.join(os.getcwd(), 'Python/data.json')
+    pathData
     print(pathData)
     with open(pathData) as json_file:
         return json.load(json_file)
