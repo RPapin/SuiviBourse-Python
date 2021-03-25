@@ -1,9 +1,9 @@
-import flask
+from flask import Flask, request
 import json
 from os import path
 import os.path
 import getOldData as god
-app = flask.Flask(__name__)
+app = Flask(__name__)
 # app.config["DEBUG"] = True
 
 
@@ -33,4 +33,5 @@ def api_id():
         id = int(request.args['id'])
     else:
         return "Error: No id field provided. Please specify an id."
-app.run()
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
