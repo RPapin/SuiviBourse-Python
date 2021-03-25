@@ -8,21 +8,19 @@ app = Flask(__name__)
 # app.config["DEBUG"] = True
 
 onlyfiles = [f for f in listdir(os.getcwd()) if isfile(join(os.getcwd(), f))]
-print(onlyfiles)
 @app.route('/', methods=['GET'])
 def home():
-    print(onlyfiles)
     return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
 # A route to return all data.
 @app.route('/api/v1/data', methods=['GET'])
 def api_all():
-    pathData = os.path.join(os.getcwd(), 'Python/data.json')
+    pathData = os.path.join(os.getcwd(), 'data.json')
     with open(pathData) as json_file:
         return json.load(json_file)
 @app.route('/api/v1/fecthLastData', methods=['GET'])
 def fetchLastData():
     god.main()
-    pathData = os.path.join(os.getcwd(), 'Python/data.json')
+    pathData = os.path.join(os.getcwd(), 'data.json')
     with open(pathData) as json_file:
         return json.load(json_file)
         
