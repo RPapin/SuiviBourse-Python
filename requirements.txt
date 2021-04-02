@@ -1,8 +1,9 @@
 Flask==1.1.2
-numpy
+Flask_Cors==3.0.10
 selenium==3.141.0
-google_api_python_client==2.0.2
-google_auth_oauthlib==0.4.3
-Pillow==8.1.2
+google_api_python_client==2.1.0
+google_auth_oauthlib==0.4.4
+numpy==1.20.2
+Pillow==8.2.0
 protobuf==3.15.6
 gunicorn
