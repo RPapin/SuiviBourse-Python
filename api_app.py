@@ -14,7 +14,7 @@ pathData = os.path.join(os.getcwd(), 'data.json')
 print(pathData)
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Get Bourse Info V0.1</p>"
+    return "<h1>Get Bourse Info V0.1</h1>"
 # A route to return all data.
 @app.route('/data', methods=['GET'])
 def api_all():
