@@ -6,7 +6,7 @@ from os.path import isfile, join
 import getOldData as god
 from flask_cors import CORS
 app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # app.config["DEBUG"] = True
 
 onlyfiles = [f for f in listdir(os.getcwd()) if isfile(join(os.getcwd(), f))]
@@ -14,7 +14,7 @@ pathData = os.path.join(os.getcwd(), 'data.json')
 print(pathData)
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
+    return "<h1>Get Bourse Info V0.1</p>"
 # A route to return all data.
 @app.route('/data', methods=['GET'])
 def api_all():
