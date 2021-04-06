@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 import base64
 from datetime import date
 import json
@@ -15,8 +16,8 @@ import time
 from datetime import datetime
 
 # pathData = os.path.join(os.getcwd(), 'react-app/src/data.json')
-pathData = os.path.join(os.getcwd(), 'Python/data.json')
-pathBaseData = os.path.join(os.getcwd(), 'Python/base_data.json')
+pathData = os.path.join(os.getcwd(), 'data.json')
+pathBaseData = os.path.join(os.getcwd(), 'base_data.json')
 today = date.today()
 # dd/mm/YY
 todaySlash = today.strftime("%d/%m/%Y")
@@ -40,6 +41,7 @@ def dlDataFile(code, url):
     if path.exists("C:/Users/remip/Downloads/" + code + "_" + todayTiret + ".txt"):
         return True
     chrome_options = Options()
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
     chrome_options.add_argument("--use-fake-ui-for-media-stream")
     # Using Chrome to access web
     driver = webdriver.Chrome(executable_path=r'E:\chromedriver_win32\chromedriver.exe', options=chrome_options)#E:\chromedriver_win32\chromedriver.exe
@@ -47,6 +49,7 @@ def dlDataFile(code, url):
     # Open the website
     driver.get(url)
     driver.find_element_by_id('didomi-notice-agree-button').click()
+    driver.refresh()
     driver.find_element_by_xpath("/html/body/main/div/section[1]/div[2]/article/div[1]/div/div[1]/div[4]/div[2]/div[1]/div[2]/div[3]").click()
     dlBtn = driver.find_element_by_xpath("/html/body/main/div/section[1]/div[2]/article/div[1]/div/div[1]/div[4]/div[2]/div[1]/div[4]/div[4]/div")
     dlBtn.click()

@@ -5,23 +5,24 @@ import os.path
 from os.path import isfile, join
 import getOldData as god
 from flask_cors import CORS
+from flask import jsonify
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # app.config["DEBUG"] = True
 
 onlyfiles = [f for f in listdir(os.getcwd()) if isfile(join(os.getcwd(), f))]
 pathData = os.path.join(os.getcwd(), 'data.json')
-print(pathData)
+
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Get Bourse Info V0.1</h1>"
+    return "<h1>Get Bourse Info V0.2</h1>"
 # A route to return all data.
 @app.route('/data', methods=['GET'])
 def api_all():
-    
     with open(pathData) as json_file:
-        return json.load(json_file)
-@app.route('/fecthLastData', methods=['GET'])
+        print(json_file)
+        return jsonify(json.load(json_file))
+@app.route('/fetchData', methods=['GET'])
 def fetchLastData():
     god.main()
     with open(pathData) as json_file:
