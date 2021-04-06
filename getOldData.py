@@ -37,14 +37,24 @@ def getLastDatData(today):
             else :
                 mostOldDate = oldData['date']
     return mostOldDate
-def dlDataFile(code, url):
+def dlDataFile(code, url, call_from_api):
     if path.exists("C:/Users/remip/Downloads/" + code + "_" + todayTiret + ".txt"):
         return True
-    chrome_options = Options()
-    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
-    chrome_options.add_argument("--use-fake-ui-for-media-stream")
-    # Using Chrome to access web
-    driver = webdriver.Chrome(executable_path="chromedriver\chromedriver.exe", options=chrome_options)#E:\chromedriver_win32\chromedriver.exe
+    if call_from_api:
+        chrome_options = Options()
+        chrome_options.binary_location = GOOGLE_CHROME_BIN
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
+        chrome_options.add_argument("--use-fake-ui-for-media-stream")
+        # Using Chrome to access web
+        driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+    else :
+        chrome_options = Options()
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
+        chrome_options.add_argument("--use-fake-ui-for-media-stream")
+        # Using Chrome to access web
+        driver = webdriver.Chrome(executable_path="chromedriver\chromedriver.exe", options=chrome_options)#E:\chromedriver_win32\chromedriver.exe
     driver.implicitly_wait(10)
     # Open the website
     driver.get(url)
@@ -134,14 +144,14 @@ def addData(formatedData):
             json.dump(data, outfile)
             outfile.close()
         json_file.close()
-def main():
+def main(call_from_api=True):
     finalDataTable = {}
     lastDayData = getLastDatData(today)
     if path.exists(pathBaseData):
         with open(pathBaseData) as json_file:
             data = json.load(json_file)
             for actionDatas in data:
-                dlDataFile(data[actionDatas]['CODE'], data[actionDatas]['URL'])
+                dlDataFile(data[actionDatas]['CODE'], data[actionDatas]['URL'], call_from_api)
                 finalDataTable[data[actionDatas]['CODE']] = readAndSaveData(data[actionDatas]['CODE'], data[actionDatas]['DATE_INVEST'], lastDayData)
             json_file.close()
             formatedData = formatData(finalDataTable, data)
@@ -151,4 +161,4 @@ def main():
     else :
         print('No base data json')
         sys.exit()
-# main()
+# main(False)
