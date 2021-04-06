@@ -44,7 +44,7 @@ def dlDataFile(code, url):
     chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
     chrome_options.add_argument("--use-fake-ui-for-media-stream")
     # Using Chrome to access web
-    driver = webdriver.Chrome(executable_path=r'E:\chromedriver_win32\chromedriver.exe', options=chrome_options)#E:\chromedriver_win32\chromedriver.exe
+    driver = webdriver.Chrome(executable_path="chromedriver\chromedriver.exe", options=chrome_options)#E:\chromedriver_win32\chromedriver.exe
     driver.implicitly_wait(10)
     # Open the website
     driver.get(url)

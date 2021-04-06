@@ -4955,6 +4955,419 @@
           "% Actif": 12.58
         }
       }
+    },
+    {
+      "date": "24/03/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "37,4\u20ac",
+          "Valorisation": "561,0\u20ac",
+          "+/- Values latentes": "+82,84\u20ac(+17,33%)",
+          "% Actif": 12.26
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "142,05\u20ac",
+          "Valorisation": "1420,5\u20ac",
+          "+/- Values latentes": "+315,83\u20ac(+28,59%)",
+          "% Actif": 12.26
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "39,2\u20ac",
+          "Valorisation": "235,2\u20ac",
+          "+/- Values latentes": "+49,72\u20ac(+26,81%)",
+          "% Actif": 12.26
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "141,2\u20ac",
+          "Valorisation": "706,0\u20ac",
+          "+/- Values latentes": "+104,83\u20ac(+17,44%)",
+          "% Actif": 12.26
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,84\u20ac",
+          "Valorisation": "478,8\u20ac",
+          "+/- Values latentes": "-51,1\u20ac(-9,64%)",
+          "% Actif": 12.26
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "5,03\u20ac",
+          "Valorisation": "503,0\u20ac",
+          "+/- Values latentes": "+188,7\u20ac(+60,04%)",
+          "% Actif": 12.26
+        }
+      }
+    },
+    {
+      "date": "25/03/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "41,55\u20ac",
+          "Valorisation": "623,25\u20ac",
+          "+/- Values latentes": "+145,09\u20ac(+30,34%)",
+          "% Actif": 11.34
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "141,95\u20ac",
+          "Valorisation": "1419,5\u20ac",
+          "+/- Values latentes": "+314,83\u20ac(+28,5%)",
+          "% Actif": 11.34
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "39,15\u20ac",
+          "Valorisation": "234,9\u20ac",
+          "+/- Values latentes": "+49,42\u20ac(+26,65%)",
+          "% Actif": 11.34
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "140,2\u20ac",
+          "Valorisation": "701,0\u20ac",
+          "+/- Values latentes": "+99,83\u20ac(+16,61%)",
+          "% Actif": 11.34
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,36\u20ac",
+          "Valorisation": "445,2\u20ac",
+          "+/- Values latentes": "-84,7\u20ac(-15,98%)",
+          "% Actif": 11.34
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "5,02\u20ac",
+          "Valorisation": "502,0\u20ac",
+          "+/- Values latentes": "+187,7\u20ac(+59,72%)",
+          "% Actif": 11.34
+        }
+      }
+    },
+    {
+      "date": "26/03/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "42,75\u20ac",
+          "Valorisation": "641,25\u20ac",
+          "+/- Values latentes": "+163,1\u20ac(+34,11%)",
+          "% Actif": 11.17
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "145,75\u20ac",
+          "Valorisation": "1457,5\u20ac",
+          "+/- Values latentes": "+352,83\u20ac(+31,94%)",
+          "% Actif": 11.17
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "39,85\u20ac",
+          "Valorisation": "239,1\u20ac",
+          "+/- Values latentes": "+53,62\u20ac(+28,91%)",
+          "% Actif": 11.17
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "141,2\u20ac",
+          "Valorisation": "706,0\u20ac",
+          "+/- Values latentes": "+104,83\u20ac(+17,44%)",
+          "% Actif": 11.17
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,38\u20ac",
+          "Valorisation": "446,6\u20ac",
+          "+/- Values latentes": "-83,3\u20ac(-15,72%)",
+          "% Actif": 11.17
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "5,06\u20ac",
+          "Valorisation": "506,0\u20ac",
+          "+/- Values latentes": "+191,7\u20ac(+60,99%)",
+          "% Actif": 11.17
+        }
+      }
+    },
+    {
+      "date": "29/03/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "42,7\u20ac",
+          "Valorisation": "640,5\u20ac",
+          "+/- Values latentes": "+162,35\u20ac(+33,95%)",
+          "% Actif": 11.88
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "146,55\u20ac",
+          "Valorisation": "1465,5\u20ac",
+          "+/- Values latentes": "+360,83\u20ac(+32,66%)",
+          "% Actif": 11.88
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "39,78\u20ac",
+          "Valorisation": "238,68\u20ac",
+          "+/- Values latentes": "+53,2\u20ac(+28,68%)",
+          "% Actif": 11.88
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "142,4\u20ac",
+          "Valorisation": "712,0\u20ac",
+          "+/- Values latentes": "+110,83\u20ac(+18,44%)",
+          "% Actif": 11.88
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,86\u20ac",
+          "Valorisation": "480,2\u20ac",
+          "+/- Values latentes": "-49,7\u20ac(-9,38%)",
+          "% Actif": 11.88
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "5,05\u20ac",
+          "Valorisation": "505,0\u20ac",
+          "+/- Values latentes": "+190,7\u20ac(+60,67%)",
+          "% Actif": 11.88
+        }
+      }
+    },
+    {
+      "date": "30/03/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "42,2\u20ac",
+          "Valorisation": "633,0\u20ac",
+          "+/- Values latentes": "+154,85\u20ac(+32,38%)",
+          "% Actif": 11.89
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "144,95\u20ac",
+          "Valorisation": "1449,5\u20ac",
+          "+/- Values latentes": "+344,83\u20ac(+31,22%)",
+          "% Actif": 11.89
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "38,96\u20ac",
+          "Valorisation": "233,76\u20ac",
+          "+/- Values latentes": "+48,28\u20ac(+26,03%)",
+          "% Actif": 11.89
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "142,8\u20ac",
+          "Valorisation": "714,0\u20ac",
+          "+/- Values latentes": "+112,83\u20ac(+18,77%)",
+          "% Actif": 11.89
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,8\u20ac",
+          "Valorisation": "476,0\u20ac",
+          "+/- Values latentes": "-53,9\u20ac(-10,17%)",
+          "% Actif": 11.89
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "4,98\u20ac",
+          "Valorisation": "498,0\u20ac",
+          "+/- Values latentes": "+183,7\u20ac(+58,45%)",
+          "% Actif": 11.89
+        }
+      }
+    },
+    {
+      "date": "31/03/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "43,1\u20ac",
+          "Valorisation": "646,5\u20ac",
+          "+/- Values latentes": "+168,35\u20ac(+35,21%)",
+          "% Actif": 11.94
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "145,1\u20ac",
+          "Valorisation": "1451,0\u20ac",
+          "+/- Values latentes": "+346,33\u20ac(+31,35%)",
+          "% Actif": 11.94
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "38,77\u20ac",
+          "Valorisation": "232,62\u20ac",
+          "+/- Values latentes": "+47,14\u20ac(+25,42%)",
+          "% Actif": 11.94
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "142,6\u20ac",
+          "Valorisation": "713,0\u20ac",
+          "+/- Values latentes": "+111,83\u20ac(+18,6%)",
+          "% Actif": 11.94
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,86\u20ac",
+          "Valorisation": "480,2\u20ac",
+          "+/- Values latentes": "-49,7\u20ac(-9,38%)",
+          "% Actif": 11.94
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "4,97\u20ac",
+          "Valorisation": "497,0\u20ac",
+          "+/- Values latentes": "+182,7\u20ac(+58,13%)",
+          "% Actif": 11.94
+        }
+      }
+    },
+    {
+      "date": "01/04/2021",
+      "dayData": {
+        "AUBAY": {
+          "Titres en portefeuille": 15,
+          "Code ISIN": "FR0000063737",
+          "Prix moyen": "31,877\u20ac",
+          "Cours/VL": "42,1\u20ac",
+          "Valorisation": "631,5\u20ac",
+          "+/- Values latentes": "+153,35\u20ac(+32,07%)",
+          "% Actif": 11.77
+        },
+        "CAPGEMINI": {
+          "Titres en portefeuille": 10,
+          "Code ISIN": "FR0000125338",
+          "Prix moyen": "110,467\u20ac",
+          "Cours/VL": "148,65\u20ac",
+          "Valorisation": "1486,5\u20ac",
+          "+/- Values latentes": "+381,83\u20ac(+34,57%)",
+          "% Actif": 11.77
+        },
+        "FDJ": {
+          "Titres en portefeuille": 6,
+          "Code ISIN": "FR0013451333",
+          "Prix moyen": "30,913\u20ac",
+          "Cours/VL": "38,65\u20ac",
+          "Valorisation": "231,9\u20ac",
+          "+/- Values latentes": "+46,42\u20ac(+25,03%)",
+          "% Actif": 11.77
+        },
+        "SOMFY": {
+          "Titres en portefeuille": 5,
+          "Code ISIN": "FR0013199916",
+          "Prix moyen": "120,234\u20ac",
+          "Cours/VL": "147,2\u20ac",
+          "Valorisation": "736,0\u20ac",
+          "+/- Values latentes": "+134,83\u20ac(+22,43%)",
+          "% Actif": 11.77
+        },
+        "WITBE": {
+          "Titres en portefeuille": 70,
+          "Code ISIN": "FR0013143872",
+          "Prix moyen": "7,57\u20ac",
+          "Cours/VL": "6,9\u20ac",
+          "Valorisation": "483,0\u20ac",
+          "+/- Values latentes": "-46,9\u20ac(-8,85%)",
+          "% Actif": 11.77
+        },
+        "2CRSI PROMESSES": {
+          "Titres en portefeuille": 100,
+          "Code ISIN": "FR0013341781",
+          "Prix moyen": "3,143\u20ac",
+          "Cours/VL": "5,34\u20ac",
+          "Valorisation": "534,0\u20ac",
+          "+/- Values latentes": "+219,7\u20ac(+69,9%)",
+          "% Actif": 11.77
+        }
+      }
     }
   ]
 }
