@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from webdriver_manager.chrome import ChromeDriverManager
 import base64
 from datetime import date
 import json
@@ -42,13 +43,13 @@ def dlDataFile(code, url, call_from_api):
         return True
     if call_from_api:
         chrome_options = Options()
-        chrome_options.binary_location = GOOGLE_CHROME_BIN
         chrome_options.add_argument('--disable-gpu')
         chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument("disable-dev-shm-usage")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         chrome_options.add_argument("--use-fake-ui-for-media-stream")
         # Using Chrome to access web
-        driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+        driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), chrome_options=chrome_options)
     else :
         chrome_options = Options()
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
@@ -161,4 +162,4 @@ def main(call_from_api=True):
     else :
         print('No base data json')
         sys.exit()
-# main(False)
+# main()
