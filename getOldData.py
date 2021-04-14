@@ -101,6 +101,7 @@ def formatData(fullData, base_data):
     finalLocalTable = []
     for day in days:
         localDataTable[day] = {}
+        localValueFloat = {}
         totalStockPersonnal = 0
         for stockActionLabel in fullData.keys():
             stockValueAction = float(fullData[stockActionLabel][day])
@@ -123,14 +124,16 @@ def formatData(fullData, base_data):
                 'Valorisation' : floatToEur(str(stockValuePersonnal)),
                 '+/- Values latentes' : latenteValue
                 }
+            localValueFloat[stockActionLabel] = stockValuePersonnal
         
         for stockActionLabel in fullData.keys():
-            actifPct = round((stockValuePersonnal / totalStockPersonnal) * 100, 2)
+            actifPct = round((localValueFloat[stockActionLabel] / totalStockPersonnal) * 100, 2)
+            print(actifPct)
             localDataTable[day][stockActionLabel]['% Actif'] = actifPct
             if base_data[stockActionLabel]['LABEL'] != base_data[stockActionLabel]['CODE'] : 
                 localDataTable[day][base_data[stockActionLabel]['LABEL']] = localDataTable[day][stockActionLabel]
                 del localDataTable[day][stockActionLabel]
-
+        print(localDataTable)
         finalLocalTable.append({"date" : day, "dayData": localDataTable[day]})  
     return finalLocalTable
 def addData(formatedData):
@@ -162,4 +165,4 @@ def main(call_from_api=True):
     else :
         print('No base data json')
         sys.exit()
-# main()
+main()
