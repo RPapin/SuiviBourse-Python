@@ -1,82 +1,22 @@
-from __future__ import print_function
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 
-import re
-import xml.etree.ElementTree as ET
-import base64
-import pickle
-import os.path
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
-from apiclient import errors
+# Instantiate headless driver
+chrome_options = Options()
 
-# If modifying these scopes, delete the file token.pickle.
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
-def parseXML(file_path):
-    myTree = ET.parse(file_path)
-    myRoot = myTree.getroot()
-    for x in myRoot:
-        smsBody = x.attrib['body']
-    code = re.findall(r"\d{8}", smsBody)
-    print(code[0])
+# Windows path
+chromedriver_location = 'chromedriver\chromedriver.exe'
 
-def GetAttachments(service, user_id, msg_id):
-    """Get and store attachment from Message with given id.
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
 
-    :param service: Authorized Gmail API service instance.
-    :param user_id: User's email address. The special value "me" can be used to indicate the authenticated user.
-    :param msg_id: ID of Message containing attachment.
-    """
-    try:
-        message = service.users().messages().get(userId=user_id, id=msg_id).execute()
+chrome_prefs = {"download.default_directory": r"C:\Users\remip\Downloads"} # (windows)
+chrome_options.experimental_options["prefs"] = chrome_prefs
 
-        for part in message['payload']['parts']:
-            if part['filename']:
-                if 'data' in part['body']:
-                    data = part['body']['data']
-                else:
-                    att_id = part['body']['attachmentId']
-                    att = service.users().messages().attachments().get(userId=user_id, messageId=msg_id,id=att_id).execute()
-                    data = att['data']
-                file_data = base64.urlsafe_b64decode(data.encode('UTF-8'))
-                path = part['filename']
+driver = webdriver.Chrome(chromedriver_location,options=chrome_options)
 
-                with open(path, 'wb') as f:
-                    f.write(file_data)
-        parseXML(path)
-    except errors.HttpError as error:
-        print('An error occurred: %s' % error)
-
-def search_last_save(service, user_id='me'):
-    lastMessage = service.users().messages().list(userId=user_id, q="subject:Sauvegarde").execute()
-
-    GetAttachments(service, user_id, lastMessage['messages'][0]['id'])
-def main():
-    """Shows basic usage of the Gmail API.
-    Lists the user's Gmail labels.
-    """
-    creds = None
-    # The file token.pickle stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
-    if os.path.exists('token.pickle'):
-        with open('token.pickle', 'rb') as token:
-            creds = pickle.load(token)
-    # If there are no (valid) credentials available, let the user log in.
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
-        # Save the credentials for the next run
-        with open('token.pickle', 'wb') as token:
-            pickle.dump(creds, token)
-
-    service = build('gmail', 'v1', credentials=creds)
-    search_last_save(service)
-
-if __name__ == '__main__':
-    main()
-
+# Download your file
+driver.get('https://www.mockaroo.com/')
+driver.find_element_by_xpath('/html/body/div[1]/main/div[2]/form/div[3]/button[1]').click()
