@@ -4,10 +4,10 @@ from os import path, listdir
 import os.path
 from os.path import isfile, join
 import getOldData as god
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from flask import jsonify
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 # app.config["DEBUG"] = True
 
 onlyfiles = [f for f in listdir(os.getcwd()) if isfile(join(os.getcwd(), f))]
@@ -18,6 +18,7 @@ def home():
     return "<h1>Get Bourse Info V0.2</h1>"
 # A route to return all data.
 @app.route('/data', methods=['GET'])
+@cross_origin()
 def api_all():
     with open(pathData) as json_file:
         print(json_file)
