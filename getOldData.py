@@ -169,4 +169,4 @@ def main(call_from_api=True):
     else :
         print('No base data json')
         sys.exit()
-main()
+# main()
