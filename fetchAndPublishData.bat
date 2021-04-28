@@ -4,4 +4,5 @@ start /wait curl http://localhost:5000/fetchData
 git add .
 git commit -m data.json
 git push 
+taskkill /im py.exe
 exit
