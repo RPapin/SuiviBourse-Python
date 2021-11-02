@@ -29,6 +29,7 @@ def fetchLastData():
     with open(pathData) as json_file:
         return json.load(json_file)
         
+        
 @app.route('/api/v1/resources/books', methods=['GET'])
 def api_id():
     # Check if an ID was provided as part of the URL.
