@@ -44,12 +44,12 @@ driver.implicitly_wait(5)
 driver.get(url)
 
 driver.find_element_by_id("HlnkResults").click()
-running = True
-while running:
+running = 0
+while running < 50:
     element = driver.find_element_by_id("DDResults")
     all_options = element.find_elements_by_tag_name("option")
     if len(sessionHistory['SessionHistory']) >= len(all_options) - 1:
-        running = False
+        running = 50
         break
     for option in all_options:
         sessionId = option.get_attribute("value")
@@ -66,9 +66,7 @@ while running:
                     os.rename(latest_file, os.path.join(pathToResult, os.path.basename(latest_file)))
                     print(os.path.join(pathToResult, os.path.basename(latest_file)))
                 break;
-        elif sessionId != "":
-            running = False
-            break;
+    running += 1
 
 with open("history.json", "w") as outfile:
     json.dump(sessionHistory, outfile)
