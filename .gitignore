@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 __pycache__/getOldData.cpython-39.pyc
 __pycache__/getOldData.cpython-39.pyc
+/ACC_cloud/configuration.py
